@@ -1,0 +1,58 @@
+Part 1.
+
+In your own terms, define the following terms:
+
+What is HTTP?b ser
+--HTTP stands for Hypertext Transfer Protocol. It is a protocol for transmitting data over the web.
+
+What is a URL?
+--A URL, stands for Uniform Resource Locator. It is a string of text that specifies the location of a resource on the internet.
+
+What is DNS?
+--DNS stands for Domain Name System. It is a system that translates human-readable domain names into numerical IP addresses that computers can understand.
+
+What is a query string?
+--A query string is a part of a URL that contains data that is passed to a web server. A query string consists of a series of key-value pairs, with each pair separated by an ampersand character.
+
+What are two HTTP verbs and how are they different?
+--GET, to get data from a server. POST, to send data to a server.
+
+What is an HTTP request?
+--An HTTP request is a message that is sent from a client to a server to request information or a specific action.
+
+What is an HTTP response?
+--An HTTP response is a message that is sent from a server to a client in response to an HTTP request.
+
+What is an HTTP header? Give a couple examples of request and response headers you have seen.
+--An HTTP header is a piece of information that is included in an HTTP request or response. HTTP headers are used to provide additional information about the request or response, such as the content type, the date and time, the content length, or the server type.
+--- Request Headers: Accept, User-Agent, Referer
+--- Response Headers: Content-Type, Date, Server
+
+What are the processes that happen when you type “http://somesite.com/some/page.html” into a browser?
+--Your computer sends a DNS query to a DNS server to look up the IP address of the server that hosts the website.
+--Once the IP address is known, your computer establishes a connection to the server using the HTTP protocol.
+--Your computer sends an HTTP request to the server, requesting the specific web page or resource that you specified in the URL.
+--The server processes the request and sends back an HTTP response, which typically includes the HTML code for the requested web page.
+--Your web browser parses the HTML code and renders the page on your screen, using the CSS and JavaScript files that are included in the code.
+--As the web page loads, your browser may send additional HTTP requests to the server to retrieve additional resources, such as images or videos.
+--Once all of the resources have been loaded, the web page is displayed in your browser window, and you can interact with it.
+
+Part 2.
+
+curl https://icanhazdadjoke.com/search -H "Accept: application/json" -d "term=pirate"
+
+dig icanhazdadjoke.com ------- 172.67.198.173
+
+Part 3.
+
+<form method="GET" action="index.html">
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name"><br>
+  <input type="submit" value="Submit">
+</form>
+
+<form method="POST" action="">
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name"><br>
+  <input type="submit" value="Submit">
+</form>
